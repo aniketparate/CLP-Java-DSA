@@ -6,13 +6,16 @@
   	  2.3 for marks above 70 and less than equal to 80, print fair.
   	  2.4 for marks above 60 and less than equal to 70, print meets expectations.
   	  2.5 for marks less than equal to 60, print below par.
-
 */
 
 
+import java.util.Scanner;
+
 public class GradingSystem {
     public static void main(String[] args) {
-        // Write your code here
+        Scanner sc = new Scanner(System.in);
+
+
         
     }
 }
