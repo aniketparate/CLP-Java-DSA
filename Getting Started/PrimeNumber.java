@@ -24,7 +24,7 @@ public class PrimeNumber {
                 continue;
             }
 
-            for (int j = 2; j < n[i]; j++) {
+            for (int j = 2; j*j <= n[i]; j++) {        //Square root logic used and squaring on both sides
                 if (n[i] % j == 0)
                     ++count;
             }

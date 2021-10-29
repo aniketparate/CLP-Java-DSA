@@ -5,9 +5,23 @@
 */
 import java.util.*;
   
-  public class Fibonacci{
-  
-  public static void main(String[] args) {
-      // write your code here
+public class Fibonacci{
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+
+      int a = 0, b = 1, sum, count = 2;
+
+      System.out.print(" Enter the number : ");
+      int n = sc.nextInt();
+
+      System.out.println(a);
+      System.out.println(b);
+      while (count < n) {
+          sum = a + b;
+          System.out.println(" " + sum);
+          a = b;
+          b = sum;
+          count++;
+      }
    }
-  }
+}
