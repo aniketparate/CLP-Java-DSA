@@ -11,12 +11,14 @@ public class CountDigits{
         int count = 0;
         System.out.print("\n Enter the number : ");
         long num = sc.nextInt();
+        long temp = num;
 
         System.out.print("\n No of digits : ");
-        while (num != 0) {
-            num = num / 10;
+        while (temp != 0) {
+            temp = temp / 10;
             ++count;
         }
+        System.out.println(num);
         System.out.print(count);
    }
 }
